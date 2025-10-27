@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ahmad Site</title>
+  <!-- لینک به فایل CSS جداگانه -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">A</div>
+        <div>
+          <h1>Ahmad Site</h1>
+          <p class="muted">سایت ساده معرفی — طراحی شده برای Ahmad</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">درباره</a>
+        <a href="#services">خدمات</a>
+        <a href="#contact">تماس</a>
+        <a class="cta" href="#start">شروع</a>
+      </nav>
+
+      <button class="burger" aria-label="menu" onclick="toggleNav()">☰</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <h2>به Ahmad Site خوش آمدید</h2>
+          <p>یک قالب ساده، سبک و واکنش‌گرا. مناسب برای معرفی شخص یا کسب‌وکارهای کوچک. می‌توانید متن، رنگ‌ها و عکس‌ها را به‌راحتی تغییر دهید.</p>
+          <a class="btn" href="#contact">در تماس باش</a>
+
+          <div class="features" style="margin-top:18px">
+            <div class="feature">
+              <h3>طراحی زیبا</h3>
+              <p class="muted">رابط کاربری پاک و مینیمال برای نشان دادن نکات مهم.</p>
+            </div>
+            <div class="feature">
+              <h3>واکنش‌گرا</h3>
+              <p class="muted">قالب روی موبایل، تبلت و دسکتاپ به‌خوبی نمایش داده می‌شود.</p>
+            </div>
+            <div class="feature">
+              <h3>سفارشی‌سازی آسان</h3>
+              <p class="muted">کدها خوانا و کامنت‌خورده تا تغییر رنگ و محتوا ساده باشد.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h4 style="margin:0 0 8px">آخرین آمار</h4>
+            <div class="stats">
+              <div class="stat"><span class="muted">بازدید امروز</span><strong>1,248</strong></div>
+              <div class="stat"><span class="muted">مشتریان</span><strong>86</strong></div>
+              <div class="stat"><span class="muted">پروژه‌ها</span><strong>12</strong></div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" style="margin-top:22px">
+        <div class="card">
+          <h3>درباره Ahmad</h3>
+          <p class="muted">در این بخش می‌توانید معرفی کوتاهی از خود یا کسب‌وکارتان قرار دهید. این قالب به‌سادگی قابل توسعه است: اضافه کردن فرم تماس، گالری، یا لینک به شبکه‌های اجتماعی.</p>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:16px">
+        <div class="card">
+          <h3>تماس</h3>
+          <p class="muted">ایمیل: <strong>hello@ahmad.example</strong></p>
+          <p class="muted">آدرس: شهر شما</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="muted">© 2025 Ahmad Site — همه حقوق محفوظ است</div>
+      <div class="muted">طراحی شده با ❤️</div>
+    </footer>
+  </div>
+
+  <script>
+    function toggleNav(){
+      const nav = document.querySelector('nav');
+      if(!nav) return;
+      if(nav.style.display === 'flex') nav.style.display = 'none';
+      else nav.style.display = 'flex';
+    }
+  </script>
+</body>
+</html>
